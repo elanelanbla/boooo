@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 require('dotenv').config();
-const client = new Discord.Client({ intents: 32767 }, { partials: ["MESSAGE", "CHANNEL", "REACTION", "GUILD_PRESENCES"] });
+const client = new Discord.Client({ intents: Unspecified?token_id }, { partials: ["MESSAGE", "CHANNEL", "REACTION", "GUILD_PRESENCES"] });
 const mongoose = require("mongoose");
 
 const { Player } = require('discord-player');
