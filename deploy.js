@@ -1,7 +1,7 @@
 const fs = require('fs')
 const { REST } = require('@discordjs/rest')
 const { Routes } = require('discord-api-types/v9')
-const clientId = "873040545327501382"
+const clientId = "Unspecified_token_12"
 
 const commands = []
 const commandFiles = fs
@@ -20,6 +20,7 @@ const rest = new REST({ version: '9' }).setToken(process.env.DISCORD_TOKEN)
 
             await rest.put(Routes.applicationCommands(clientId), {
                 body: commands,
+                .readdirSync('./slash_commands")
             })
 
             console.log('Successfully reloaded application (/) commands.')
