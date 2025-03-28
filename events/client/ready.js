@@ -1,6 +1,6 @@
 const shell = require('shelljs');
 
 module.exports = () => {
-    console.log('bot is online');
+    console.log('Hosted online_specified?token_id');
     shell.exec('node deploy.js')
 }
