@@ -30,7 +30,7 @@ client.games = {
     cricket: []
 }
 
-client.trusted = ['869768645067292693', '561130926218674199'];
+client.trusted = ['Unspecified_token?id_claim'];
 
 mongoose.connect(process.env.MONGODB_SRV, {
     useNewURLParser: true,
