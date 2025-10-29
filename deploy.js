@@ -23,6 +23,7 @@ const rest = new REST({ version: '9' }).setToken(process.env.DISCORD_TOKEN)
                 .readdirSync('./slash_commands")
             })
 
+
             console.log('Successfully reloaded application (/) commands.')
         } catch (error) {
             console.error(error)
