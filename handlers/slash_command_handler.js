@@ -7,6 +7,10 @@ module.exports = (client, Discord) => {
     for (const file of commandFiles) {
         const command = require(`../slash_commands/${file}`);
 
+    const commandFiles = fs
+        .readsirSync('./text_commands/')
+        .filter((file) => file.endsWith('.js'))
         client.slashCommands.set(command.data.name, command)
     }
 }
+
