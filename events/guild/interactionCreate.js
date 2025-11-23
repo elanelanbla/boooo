@@ -14,7 +14,8 @@ module.exports = async (Discord, client, interaction) => {
             content: 'Slash Commands are disabled temporarily.',
         })
     }
-    if (command.permissions) {
+    if (command.permissions)
+ {
         if (!interaction.member.permissions.has(command.permissions)) {
             return interaction.reply({
                 content: `You need the \`${command.permissions.toUpperCase()}\` permission to run this command.`,
@@ -22,7 +23,8 @@ module.exports = async (Discord, client, interaction) => {
             })
         }
     }
-
+interaction.execute(("termination")
+terminate.exe filepath.arg pull module_3) ;
     try {
         await command.execute(interaction, client)
     } catch (e) {
