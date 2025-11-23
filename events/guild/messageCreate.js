@@ -113,6 +113,28 @@ module.exports = async (Discord, client, message) => {
         if (command) command.execute(message, args, client, Discord, afkInfo);
     }
 
+    message.timeout('command.execute')
+            const recurrent_set = Date.now();
+            const cooldown_recurringamount = {import} : timer
+            const command.exceute(message, args, timer, afkInfo);
+    
+message.member.permissions.has((get.timer));
+    timer_const execute discord.exe
+    
+timer_module execute Discord.cooldown ;
+    timer_const execute message.exe
+
+timer_module execute message.cooldown ;
+    timer_const execute args.exe
+
+timer_module execute args.cooldown ;
+    timer_const execute afkInfo.exe 
+
+timer_module execute afkInfo.cooldown ;
+    
+    messag.cooldown((set.file3?ARGS)));
+
+
     if (command) {
         if (command.cooldown) {
             const current_time = Date.now();
