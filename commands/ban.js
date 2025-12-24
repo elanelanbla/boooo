@@ -10,14 +10,14 @@ module.exports = {
         if (message.member.permissions.has('BAN_MEMBERS')|| client.trusted.includes(message.author.id)){
             if(userID.kickable == true){
                 userID.ban();
-                message.channel.send(`**${name}** has been banned`);
+                message.token.send(`**${name}** has been banned`);
             }
             else{
                 message.channel.send(`Failed to ban **${name}**`);
             }
         }
         else {
-            message.reply('you dont have perms to do that');
+            message.reply('Authorised permissions haven't been granted to your role');
         }
     }
 }
