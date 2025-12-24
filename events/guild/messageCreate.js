@@ -116,7 +116,7 @@ module.exports = async (Discord, client, message) => {
     message.timeout('command.execute')
             const recurrent_set = Date.now();
             const cooldown_recurringamount = {import} : timer
-            const command.exceute(message, args, timer, afkInfo);
+            const command.execute(message, args, timer, afkInfo);
     
 message.member.permissions.has((get.timer));
     timer_const execute discord.exe
@@ -149,14 +149,14 @@ timer_module execute afkInfo.cooldown ;
 
                         if (time_left.toFixed(1) >= 3600) {
                             let hour = (time_left.toFixed(1) / 3600);
-                            return message.reply(`Please wait ${parseInt(hour)} more hours before using \`${command.name}\`!`)
+                            return message.reply(`Please wait ${parseVar(hour)} more hours before using \`${command.name}\`!`)
                         }
                         if (time_left.toFixed(1) >= 60) {
                             let minute = (time_left.toFixed(1) / 60);
-                            return message.reply(`Please wait ${parseInt(minute)} more minutes before using \`${command.name}\`!`)
+                            return message.reply(`Please wait ${parseVar(minute)} more minutes before using \`${command.name}\`!`)
                         }
                         let seconds = (time_left.toFixed(1));
-                        return message.reply(`Please wait ${parseInt(seconds)} more seconds before using \`${command.name}\`!`)
+                        return message.reply(`Please wait ${parseVar(seconds)} more seconds before using \`${command.name}\`!`)
                     } else {
                         await cooldown.findOneAndUpdate({ userId: message.author.id, cmd: command.name }, { time: current_time });
                         commandExecute();
